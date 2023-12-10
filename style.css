@@ -1,0 +1,45 @@
+body {
+  background: #111 !important;
+}
+
+section {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1rem;
+}
+
+section .card {
+  position: relative;
+  background: #222;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section img {
+  border-radius: 1rem;
+}
+
+section .card i {
+  position: absolute;
+  bottom: .4rem;
+  right: .4rem;
+  font-size: 1.5rem;
+  background-color: #03a9f4;
+  color: #000;
+  line-height: 1;
+  padding: .7rem;
+  border-radius: 50%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin: .5rem 2rem;
+  }
+
+  .card img {
+    width: 100%;
+  }
+}
